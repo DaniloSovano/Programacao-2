@@ -1,6 +1,6 @@
-package aula;
+package aula6;
 // calculo constante e
-public class Math {
+public class NaperianBase {
 	
 	public static float fatorial(float num) {
 		
@@ -24,10 +24,7 @@ public class Math {
 		
 	}
 	
-	
-	
-	
-	x
+
 	public static void main(String[] args) {
 		double teste;
 		

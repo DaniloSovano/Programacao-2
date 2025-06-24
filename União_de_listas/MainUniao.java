@@ -1,19 +1,27 @@
 public class MainUniao {
     public static void main(String[] args) {
+        int[] arrayA = {10,10,10,10,10,10,10,20};
+        int[] arrayB = {1,1,1,2,2,2,3,3,8,1,2,2,5,0,25,};
 
-        int[] lista1 = {2,4,6,8,10};
-        int[] lista2 = {1,1,3,5,7,9};
-        int[] lista3 = new int[lista1.length + lista2.length];
-        for(int i = 0; i < lista3.length; i++) {
-            if(i < lista1.length){
-                lista3[i] = lista1[i];
-            }else{
-                lista3[i] = lista2[i-lista2.length+1];
-            }
+        System.out.print("Array A: ");
+        for (int val : arrayA) {
+            System.out.print(val + " ");
         }
-        for (int i = 0; i < lista3.length; i++) {
-            if
-            System.out.println(lista3[i]);
+        System.out.println();
+
+        System.out.print("Array B: ");
+        for (int val : arrayB) {
+            System.out.print(val + " ");
+        }
+
+
+        int[] uniao= UniaoOrdenada.realizarUniao(arrayA, arrayB);
+
+        System.out.println("\nUnião: ");
+        for (int val : uniao) {
+            System.out.print(val + " ");
         }
     }
 }
+
+
